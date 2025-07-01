@@ -1,0 +1,9 @@
+.ui.menu .mega.menu {
+    width: 900px !important;
+    padding: 1em;
+    left: 0 !important;
+  }
+  .mega.menu .ui.list .item {
+    padding: 0.3em 0;
+    color: black;
+  }
