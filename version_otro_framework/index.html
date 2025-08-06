@@ -1,48 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tributo a Xbox</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body class="xbox-theme">
 
-<div class="ui three item menu">
-  <a class="active item">Editorials</a>
-  <a class="item">Reviews</a>
-  <a class="item">Upcoming Events</a>
-</div>
+    <header class="ui inverted menu xbox-navbar">
+        <nav class="ui container">
+            <h1 class="header item">
+                <i class="xbox icon"></i> XBOX TRIBUTO
+            </h1>
+            <a class="item">Inicio</a>
+            <a class="item">Novedades</a>
+            <a class="item">Historia</a>
+            <a class="item">Contacto</a>
+        </nav>
+    </header>
 
-<menu class="ui secondary menu">
-  <a class="active item">
-    Home
-  </a>
-  <a class="item">
-    Messages
-  </a>
-  <a class="item">
-    Friends
-  </a>
-  <div class="right menu">
-    <div class="item">
-      <div class="ui icon input">
-        <input type="text" placeholder="Search...">
-        <i class="search link icon"></i>
-      </div>
-    </div>
-    <a class="ui item">
-      Logout
-    </a>
-  </div>
-</menu>
+    <section class="ui inverted vertical center aligned segment xbox-banner">
+        <div class="ui text container">
+            <h2 class="ui inverted header xbox-green-text">
+                <i class="xbox icon"></i> Bienvenido al Tributo a Xbox
+            </h2>
+            <p>Revive la historia, los hitos y la evolución de Xbox</p>
+            <a class="ui huge green button xbox-button">
+                Explorar Historia <i class="right arrow icon"></i>
+            </a>
+        </div>
+    </section>
 
+    <section class="ui container">
+        <h2 class="ui dividing header xbox-green-text">Últimas Novedades</h2>
+        <div class="ui two stackable cards">
+            <article class="card xbox-card">
+                <figure class="image">
+                    <i class="xbox icon"></i>
+                </figure>
+                <div class="content">
+                    <h3 class="header xbox-green-text">Lanzamiento de Xbox Series X y S</h3>
+                    <p>Presentadas en noviembre de 2020, estas consolas marcaron una nueva era en la historia de Xbox con hardware de última generación.</p>
+                </div>
+            </article>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"></script>
+            <article class="card xbox-card">
+                <figure class="image">
+                    <i class="xbox icon"></i>
+                </figure>
+                <div class="content">
+                    <h3 class="header xbox-green-text">Expansión de Xbox Game Pass</h3>
+                    <p>El servicio de suscripción de Microsoft se ha convertido en un pilar de la industria, ofreciendo cientos de juegos a un precio accesible.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="ui container">
+        <h2 class="ui dividing header xbox-green-text">Momentos Icónicos</h2>
+        <div class="ui three stackable cards">
+            <article class="card xbox-card">
+                <figure class="image">
+                    <i class="xbox icon"></i>
+                </figure>
+                <div class="content">
+                    <h3 class="header xbox-green-text">Era de la Xbox 360</h3>
+                    <p>Lanzada en 2005, la Xbox 360 redefinió el juego en línea con Xbox Live y títulos legendarios como Halo 3 y Gears of War.</p>
+                </div>
+            </article>
+
+            <article class="card xbox-card">
+                <figure class="image">
+                    <i class="xbox icon"></i>
+                </figure>
+                <div class="content">
+                    <h3 class="header xbox-green-text">Xbox One y la transición digital</h3>
+                    <p>Introducción de juegos digitales, retrocompatibilidad y mejoras multimedia, acercando más a Xbox a un centro de entretenimiento.</p>
+                </div>
+            </article>
+
+            <article class="card xbox-card">
+                <figure class="image">
+                    <i class="xbox icon"></i>
+                </figure>
+                <div class="content">
+                    <h3 class="header xbox-green-text">Halo Infinite</h3>
+                    <p>El regreso del Jefe Maestro en 2021, trayendo de vuelta la esencia de la saga y marcando un nuevo capítulo en el universo Halo.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="ui vertical segment xbox-contact">
+        <div class="ui container">
+            <h2 class="ui dividing header xbox-green-text">Contacto</h2>
+            <ul class="ui list">
+                <li><i class="mail icon"></i> <a href="mailto:contacto@tributoxbox.com">contacto@tributoxbox.com</a></li>
+                <li><i class="instagram icon"></i> <a href="https://instagram.com/tributoxbox" target="_blank">@tributoxbox</a></li>
+                <li><i class="twitter icon"></i> <a href="https://twitter.com/tributoxbox" target="_blank">@tributoxbox</a></li>
+                <li><i class="map marker alternate icon"></i> Ciudad de Córdoba, Argentina</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="ui inverted vertical footer segment xbox-footer">
+        <div class="ui container">
+            <div class="ui stackable divided equal height stackable grid">
+                <div class="seven wide column">
+                    <h4 class="ui inverted header">Tributo a Xbox</h4>
+                    <p>Esta página es un homenaje a la historia y legado de Xbox. No está afiliada a Microsoft Corporation.</p>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">Secciones</h4>
+                    <nav class="ui inverted link list">
+                        <a href="#" class="item">Inicio</a>
+                        <a href="#" class="item">Novedades</a>
+                        <a href="#" class="item">Historia</a>
+                        <a href="#" class="item">Contacto</a>
+                    </nav>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">Redes</h4>
+                    <nav class="ui inverted link list">
+                        <a href="https://instagram.com/tributoxbox" target="_blank" class="item">Instagram</a>
+                        <a href="https://twitter.com/tributoxbox" target="_blank" class="item">Twitter</a>
+                        <a href="mailto:contacto@tributoxbox.com" class="item">Email</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="ui center aligned inverted">
+                © 2025 Tributo a Xbox. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
 </body>
-
 </html>
