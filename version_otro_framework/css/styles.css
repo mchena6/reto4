@@ -1,0 +1,79 @@
+:root {
+    --color-xbox-green: #107C10;      /* Verde Xbox */
+    --color-xbox-green-bright: #00ff00; /* Verde brillante para hover */
+    --color-bg-black: #000;           /* Negro puro */
+    --color-bg-dark: #1a1a1a;         /* Negro grisáceo */
+    --color-bg-darker: #111;          /* Negro más suave */
+    --color-text-white: #ffffff;      /* Texto blanco */
+    --color-text-gray: #ccc;          /* Texto gris claro */
+
+    --padding-section: 60px;          /* Espaciado de secciones */
+    --padding-banner: 80px;           /* Espaciado del banner */
+    --border-width: 2px;              /* Ancho del borde */
+    --border-radius: 6px;             /* Bordes redondeados */
+    --transition-speed: 0.3s;         /* Velocidad de animaciones */
+    --hover-lift: -5px;               /* Elevación en hover */
+}
+
+body.xbox-theme {
+    background-color: var(--color-bg-black);
+    color: var(--color-text-white);
+}
+
+.xbox-navbar {
+    background-color: var(--color-bg-black) !important;
+    border-bottom: var(--border-width) solid var(--color-xbox-green);
+}
+
+.xbox-green-text {
+    color: var(--color-xbox-green) !important;
+}
+
+.xbox-banner {
+    background-color: var(--color-bg-black) !important;
+    border-bottom: var(--border-width) solid var(--color-xbox-green);
+    padding: var(--padding-banner) 0 !important;
+}
+
+.xbox-button {
+    background-color: var(--color-xbox-green) !important;
+    color: var(--color-text-white) !important;
+    border-radius: var(--border-radius);
+}
+
+.xbox-card {
+    background-color: var(--color-bg-dark) !important;
+    color: var(--color-text-white) !important;
+    border: 1px solid var(--color-xbox-green) !important;
+    border-radius: var(--border-radius);
+    transition: all var(--transition-speed) ease-in-out;
+}
+
+.xbox-card .description {
+    color: var(--color-text-gray) !important;
+}
+
+.xbox-card img {
+    transition: transform var(--transition-speed) ease-in-out;
+}
+
+.xbox-card:hover {
+    border-color: var(--color-xbox-green-bright) !important;
+    box-shadow: 0 0 20px var(--color-xbox-green-bright);
+    transform: translateY(var(--hover-lift));
+}
+
+.xbox-card:hover img {
+    transform: scale(1.05);
+}
+
+.xbox-contact {
+    background-color: var(--color-bg-darker) !important;
+    padding: var(--padding-section) 0 !important;
+}
+
+.xbox-footer {
+    background-color: var(--color-bg-black) !important;
+    border-top: var(--border-width) solid var(--color-xbox-green);
+    padding: 30px 0;
+}
