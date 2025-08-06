@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mega Dropdown con Semantic UI</title>
+  <title>Tienda XBOX</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 </head>
 
 <body>
@@ -14,14 +15,14 @@
         <div class="ui container">
           <!-- Nombre principal -->
             <div class="header item">
-                <i class="shop icon"></i>
+                <i class="xbox icon"></i>
                 XBOX
             </div>
             <!-- Items del navbar -->
             <a class="item">Inicio</a>
-            <a class="item">Productos</a>
-            <a class="item">Servicios</a>
-            <a class="item">Contacto</a>
+            <a class="item">Consolas</a>
+            <a class="item">Juegos</a>
+            <a class="item">Accesorios</a>
             <!-- Parte derecha del menu -->
             <div class="right menu">
                 <!-- Item Buscador -->
@@ -40,31 +41,111 @@
         </div>
     </div>
 
-    <!-- Menu (debajo del navbar) -->
+    <!-- Menu (debajo del navbar) (Arreglarlo)-->
     <div class="ui secondary pointing menu">
         <div class="ui container">
             <a class="active item">Todas las Categorías</a>
-            <a class="item">Electrónicos</a>
-            <a class="item">Ropa</a>
-            <a class="item">Hogar</a>
-            <a class="item">Deportes</a>
-            <a class="item">Libros</a>
+            <a class="item">Xbox Series X|S</a>
+            <a class="item">Juegos Xbox</a>
+            <a class="item">Controles</a>
+            <a class="item">Auriculares</a>
+            <a class="item">Game Pass</a>
         </div>
     </div>
 
     <!-- Banner -->
     <div class="ui inverted vertical center aligned segment">
         <div class="ui text container">
+            <!-- Mensaje de bienvenida -->
             <h1 class="ui inverted header">
                 <i class="shopping bag icon"></i>
-                Bienvenido a Mi Tienda
+                Bienvenido a la tienda XBOX de Microsoft
             </h1>
-            <h2>Descubre los mejores productos al mejor precio</h2>
+            <!-- Enlace a Microsoft Store-->
             <div class="ui huge primary button">
-                Explorar Productos
+                Ir a Microsoft Store
                 <i class="right arrow icon"></i>
             </div>
         </div>
     </div>
-</body>
 
+ <!-- Contenido principal -->
+    <div class="ui container">
+        
+        <!-- Productos Destacados -->
+        <div class="ui center aligned basic segment">
+            <h2 class="ui header">
+                <i class="star icon"></i>
+                <div class="content">
+                    Productos Destacados
+                    <div class="sub header">Los favoritos de nuestros clientes</div>
+                </div>
+            </h2>
+        </div>
+
+        <!-- 2 Cards Productos Destacados -->
+        <div class="ui two stackable cards">
+
+            <!-- Card 1 -->
+            <div class="card">
+                <!-- Imagen -->
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=300&h=200&fit=crop" alt="Xbox Series X">
+                </div>
+                <!-- Descripcion del producto -->
+                <div class="content">
+                    <a class="header">Xbox Series X</a>
+                    <div class="meta">
+                        <span class="date">Consola de nueva generación</span>
+                    </div>
+                    <div class="description">
+                        La consola Xbox más potente jamás creada. 4K verdadero, hasta 120 FPS y tiempos de carga ultrarrápidos.
+                    </div>
+                </div>
+                <!-- Botones -->
+                <div class="extra content">
+                    <div class="ui two buttons">
+                        <!-- Boton con precio -->
+                        <div class="ui basic green button">$499.99</div>
+                        <!-- Boton para agregar al carrito -->
+                        <div class="ui basic black button">
+                            <i class="heart icon"></i>
+                            Agregar al carrito
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="card">
+                <!-- Imagen -->
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=300&h=200&fit=crop" alt="Xbox Controller">
+                </div>
+                <!-- Descripcion del producto -->
+                <div class="content">
+                    <a class="header">Control Inalámbrico Xbox</a>
+                    <div class="meta">
+                        <span class="date">Accesorio oficial</span>
+                    </div>
+                    <div class="description">
+                        Control inalámbrico con tecnología de impulsos y gatillos dinámicos para una experiencia inmersiva.
+                    </div>
+                </div>
+                <!-- Botones -->
+                <div class="extra content">
+                    <div class="ui two buttons">
+                        <!-- Boton con precio -->
+                        <div class="ui basic green button">$59.99</div>
+                        <!-- Boton para agregar al carrito -->
+                        <div class="ui basic black button">
+                            <i class="heart icon"></i>
+                            Agregar al carrito
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
