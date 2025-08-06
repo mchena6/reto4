@@ -7,65 +7,64 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-
-  <!-- Navbar -->
-  <div class="ui inverted menu">
-    <a class="item">Inicio</a>
-
-    <!-- Dropdown mega menú -->
-    <div class="ui simple dropdown item">
-      Productos <i class="dropdown icon"></i>
-      <div class="mega menu">
-        <div class="ui four column doubling grid">
-          <div class="column">
-            <div class="ui header">Textil</div>
-            <div class="ui list">
-              <div class="item">Remeras</div>
-              <div class="item">Hoodies</div>
+    <!-- Navbar -->
+    <div class="ui fixed inverted menu">
+        <div class="ui container">
+          <!-- Nombre principal -->
+            <div class="header item">
+                <i class="shop icon"></i>
+                XBOX
             </div>
-          </div>
-          <div class="column">
-            <div class="ui header">Accesorios</div>
-            <div class="ui list">
-              <div class="item">Gift Cards</div>
-              <div class="item">Caps</div>
-              <div class="item">Pilusos</div>
-              <div class="item">Bolsos</div>
+            <!-- Items del navbar -->
+            <a class="item">Inicio</a>
+            <a class="item">Productos</a>
+            <a class="item">Servicios</a>
+            <a class="item">Contacto</a>
+            <!-- Parte derecha del menu -->
+            <div class="right menu">
+                <!-- Item Buscador -->
+                <div class="item">
+                    <div class="ui icon input">
+                        <input type="text" placeholder="Buscar...">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+                <!-- Item Mi carrito -->
+                <a class="item">
+                    <i class="shopping cart icon"></i>
+                    Carrito
+                </a>
             </div>
-          </div>
-          <div class="column">
-            <div class="ui header">Papelería</div>
-            <div class="ui list">
-              <div class="item">Tarjetas</div>
-              <div class="item">Stickers</div>
-              <div class="item">Afiches</div>
-              <div class="item">Cuadernos</div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="ui header">Otros</div>
-            <div class="ui list">
-              <div class="item">Tazas</div>
-              <div class="item">Llaveros</div>
-              <div class="item">Imanes</div>
-              <div class="item">Sellos</div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
 
-    <a class="item">Contacto</a>
-    <a class="item">Ayuda</a>
-  </div>
+    <!-- Menu (debajo del navbar) -->
+    <div class="ui secondary pointing menu">
+        <div class="ui container">
+            <a class="active item">Todas las Categorías</a>
+            <a class="item">Electrónicos</a>
+            <a class="item">Ropa</a>
+            <a class="item">Hogar</a>
+            <a class="item">Deportes</a>
+            <a class="item">Libros</a>
+        </div>
+    </div>
 
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"></script>
-  <script>
-    $('.ui.dropdown').dropdown({ on: 'hover' }); // hace que se abra al pasar el mouse
-  </script>
-
+    <!-- Banner -->
+    <div class="ui inverted vertical center aligned segment">
+        <div class="ui text container">
+            <h1 class="ui inverted header">
+                <i class="shopping bag icon"></i>
+                Bienvenido a Mi Tienda
+            </h1>
+            <h2>Descubre los mejores productos al mejor precio</h2>
+            <div class="ui huge primary button">
+                Explorar Productos
+                <i class="right arrow icon"></i>
+            </div>
+        </div>
+    </div>
 </body>
-</html>
+
