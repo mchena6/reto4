@@ -8,34 +8,128 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body class="xbox-theme">
+<body>
 
     <header class="ui inverted menu xbox-navbar">
         <nav class="ui container">
             <h1 class="header item">
-                <i class="xbox icon"></i> XBOX TRIBUTO
+                <i class="xbox icon"></i> TRIBUTO A XBOX
             </h1>
             <a class="item">Inicio</a>
+            <a class="item">Productos</a>
             <a class="item">Novedades</a>
             <a class="item">Historia</a>
             <a class="item">Contacto</a>
+            <div class="right menu">
+                <div class="item">
+                    <div class="ui icon input">
+                        <input type="text" placeholder="Buscar...">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+                <a class="item">
+                    <i class="shopping cart icon"></i>
+                    Carrito
+                </a>
+            </div>
         </nav>
     </header>
 
     <section class="ui inverted vertical center aligned segment xbox-banner">
         <div class="ui text container">
             <h2 class="ui inverted header xbox-green-text">
-                <i class="xbox icon"></i> Bienvenido al Tributo a Xbox
+                <i class="xbox icon"></i> Bienvenido a la pagina tributo a XBOX
             </h2>
-            <p>Revive la historia, los hitos y la evolución de Xbox</p>
+            <p>Aca podras ver, encontrar su historia, avances y algunos productos.</p>
             <a class="ui huge green button xbox-button">
                 Explorar Historia <i class="right arrow icon"></i>
             </a>
         </div>
     </section>
 
+
+<!-- Contenido principal -->
+    <div class="ui container">
+        
+        <!-- Productos Destacados -->
+        <div class="ui center aligned basic segment">
+            <h2 class="ui header">
+                <i class="inverted xbox icon"></i>
+                <div class="content xbox-green-text">
+                    Productos Destacados
+                    <div class="sub header xbox-white-text">Los favoritos de nuestros clientes</div>
+                </div>
+            </h2>
+        </div>
+
+        <!-- 2 Cards Productos Destacados -->
+        <div class="ui two stackable cards">
+
+            <!-- Card 1 -->
+            <div class="card xbox-card">
+                <!-- Imagen -->
+                <div class="image">
+                    <img src="images/console.jpg" alt="Xbox Series X">
+                </div>
+                <!-- Descripcion del producto -->
+                <div class="content">
+                    <a class="header xbox-green-text">Xbox Series X</a>
+                    <div class="meta">
+                        <span class="date xbox-white-text">Consola de nueva generación</span>
+                    </div>
+                    <div class="description">
+                        La consola Xbox más potente jamás creada. 4K verdadero, hasta 120 FPS y tiempos de carga ultrarrápidos.
+                    </div>
+                </div>
+                <!-- Botones -->
+                <div class="extra content">
+                    <div class="ui two buttons">
+                        <!-- Boton con precio -->
+                        <div class="ui basic green button">$499.99</div>
+                        <!-- Boton para agregar al carrito -->
+                        <div class="ui basic grey button">
+                            <i class="shopping cart icon"></i>
+                            Agregar al carrito
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="card xbox-card">
+                <!-- Imagen -->
+                <div class="image">
+                    <img src="images/control.jpg" alt="Xbox Controller">
+                </div>
+                <!-- Descripcion del producto -->
+                <div class="content">
+                    <a class="header xbox-green-text">Control Inalámbrico Xbox</a>
+                    <div class="meta">
+                        <span class="date xbox-white-text">Accesorio oficial</span>
+                    </div>
+                    <div class="description">
+                        Control inalámbrico con tecnología de impulsos y gatillos dinámicos para una experiencia inmersiva.
+                    </div>
+                </div>
+                <!-- Botones -->
+                <div class="extra content">
+                    <div class="ui two buttons">
+                        <!-- Boton con precio -->
+                        <div class="ui basic green button">$59.99</div>
+                        <!-- Boton para agregar al carrito -->
+                        <div class="ui basic grey button">
+                            <i class="shopping cart icon"></i>
+                            Agregar al carrito
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <section class="ui container">
-        <h2 class="ui dividing header xbox-green-text">Últimas Novedades</h2>
+        <h2 class="ui content xbox-green-text">Últimas Novedades</h2>
         <div class="ui two stackable cards">
             <article class="card xbox-card">
                 <figure class="image">
@@ -60,7 +154,8 @@
     </section>
 
     <section class="ui container">
-        <h2 class="ui dividing header xbox-green-text">Momentos Icónicos</h2>
+        <h2 class="ui content xbox-green-text">Momentos Icónicos</h2>
+        <p> A continuacion momentos iconicos de la historia de XBOX </p>
         <div class="ui three stackable cards">
             <article class="card xbox-card">
                 <figure class="image">
@@ -94,33 +189,32 @@
         </div>
     </section>
 
-    <section class="ui vertical segment xbox-contact">
-        <div class="ui container">
-            <h2 class="ui dividing header xbox-green-text">Contacto</h2>
-            <ul class="ui list">
-                <li><i class="mail icon"></i> <a href="mailto:contacto@tributoxbox.com">contacto@tributoxbox.com</a></li>
-                <li><i class="instagram icon"></i> <a href="https://instagram.com/tributoxbox" target="_blank">@tributoxbox</a></li>
-                <li><i class="twitter icon"></i> <a href="https://twitter.com/tributoxbox" target="_blank">@tributoxbox</a></li>
-                <li><i class="map marker alternate icon"></i> Ciudad de Córdoba, Argentina</li>
-            </ul>
+<section class="ui vertical segment xbox-contact">
+    <div class="ui container">
+        <h2 class="ui xbox-green-text">Páginas oficiales de XBOX</h2>
+        <div class="ui stackable three column grid">
+            <div class="column">
+                <i class="mail icon"></i> 
+                <a href="mailto:xbox@xbox.com">xbox@xbox.com</a>
+            </div>
+            <div class="column">
+                <i class="instagram icon"></i> 
+                <a href="https://instagram.com/xbox" target="_blank">@xbox</a>
+            </div>
+            <div class="column">
+                <i class="twitter icon"></i> 
+                <a href="https://twitter.com/xbox" target="_blank">@xbox</a>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <footer class="ui inverted vertical footer segment xbox-footer">
         <div class="ui container">
             <div class="ui stackable divided equal height stackable grid">
                 <div class="seven wide column">
                     <h4 class="ui inverted header">Tributo a Xbox</h4>
-                    <p>Esta página es un homenaje a la historia y legado de Xbox. No está afiliada a Microsoft Corporation.</p>
-                </div>
-                <div class="three wide column">
-                    <h4 class="ui inverted header">Secciones</h4>
-                    <nav class="ui inverted link list">
-                        <a href="#" class="item">Inicio</a>
-                        <a href="#" class="item">Novedades</a>
-                        <a href="#" class="item">Historia</a>
-                        <a href="#" class="item">Contacto</a>
-                    </nav>
+                    <p>Esta página es un tributo a xbox. No está afiliada a Microsoft.</p>
                 </div>
                 <div class="three wide column">
                     <h4 class="ui inverted header">Redes</h4>
@@ -132,7 +226,7 @@
                 </div>
             </div>
             <div class="ui center aligned inverted">
-                © 2025 Tributo a Xbox. Todos los derechos reservados.
+                © 2025 Todos los derechos reservados.
             </div>
         </div>
     </footer>
