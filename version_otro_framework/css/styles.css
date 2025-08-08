@@ -3,10 +3,9 @@
     --color-xbox-green-bright: #00ff00;
     --color-bg-black: #000;
     --color-bg-dark: #1a1a1a;
-    --color-bg-darker: #111;  
-    --color-text-white: #ffffff;      
-    --color-text-gray: #ccc;         
-
+    --color-bg-darker: #111;
+    --color-text-white: #ffffff;
+    --color-text-gray: #ccc;
 }
 
 body{
