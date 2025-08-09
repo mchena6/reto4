@@ -3,149 +3,216 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tienda XBOX</title>
+  <title>Tributo a Xbox</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <!-- Navbar -->
-    <div class="ui fixed inverted menu">
-        <div class="ui container">
-          <!-- Nombre principal -->
-            <div class="header item">
-                <i class="xbox icon"></i>
-                XBOX
-            </div>
-            <!-- Items del navbar -->
-            <a class="item">Inicio</a>
-            <a class="item">Consolas</a>
-            <a class="item">Juegos</a>
-            <a class="item">Accesorios</a>
-            <!-- Parte derecha del menu -->
-            <div class="right menu">
-                <!-- Item Buscador -->
-                <div class="item">
-                    <div class="ui icon input">
-                        <input type="text" placeholder="Buscar...">
-                        <i class="search link icon"></i>
-                    </div>
-                </div>
-                <!-- Item Mi carrito -->
-                <a class="item">
-                    <i class="shopping cart icon"></i>
-                    Carrito
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Menu (debajo del navbar) (Arreglarlo)-->
-    <div class="ui secondary pointing menu">
-        <div class="ui container">
-            <a class="active item">Todas las Categorías</a>
-            <a class="item">Xbox Series X|S</a>
-            <a class="item">Juegos Xbox</a>
-            <a class="item">Controles</a>
-            <a class="item">Auriculares</a>
-            <a class="item">Game Pass</a>
-        </div>
-    </div>
-
-    <!-- Banner -->
-    <div class="ui inverted vertical center aligned segment">
-        <div class="ui text container">
-            <!-- Mensaje de bienvenida -->
-            <h1 class="ui inverted header">
-                <i class="shopping bag icon"></i>
-                Bienvenido a la tienda XBOX de Microsoft
-            </h1>
-            <!-- Enlace a Microsoft Store-->
-            <div class="ui huge primary button">
-                Ir a Microsoft Store
-                <i class="right arrow icon"></i>
-            </div>
-        </div>
-    </div>
-
- <!-- Contenido principal -->
-    <div class="ui container">
-        
-        <!-- Productos Destacados -->
-        <div class="ui center aligned basic segment">
-            <h2 class="ui header">
-                <i class="star icon"></i>
-                <div class="content">
-                    Productos Destacados
-                    <div class="sub header">Los favoritos de nuestros clientes</div>
-                </div>
-            </h2>
-        </div>
-
-        <!-- 2 Cards Productos Destacados -->
-        <div class="ui two stackable cards">
-
-            <!-- Card 1 -->
-            <div class="card">
-                <!-- Imagen -->
-                <div class="image">
-                    <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=300&h=200&fit=crop" alt="Xbox Series X">
-                </div>
-                <!-- Descripcion del producto -->
-                <div class="content">
-                    <a class="header">Xbox Series X</a>
-                    <div class="meta">
-                        <span class="date">Consola de nueva generación</span>
-                    </div>
-                    <div class="description">
-                        La consola Xbox más potente jamás creada. 4K verdadero, hasta 120 FPS y tiempos de carga ultrarrápidos.
-                    </div>
-                </div>
-                <!-- Botones -->
-                <div class="extra content">
-                    <div class="ui two buttons">
-                        <!-- Boton con precio -->
-                        <div class="ui basic green button">$499.99</div>
-                        <!-- Boton para agregar al carrito -->
-                        <div class="ui basic black button">
-                            <i class="heart icon"></i>
-                            Agregar al carrito
+    
+    <div class="container">
+        <header class="ui inverted menu xbox-navbar">
+            <nav class="ui container">
+                <h1 class="header item">
+                    <i class="xbox icon"></i> TRIBUTO A XBOX
+                </h1>
+                <a class="item">Inicio</a>
+                <a class="item">Productos</a>
+                <a class="item">Novedades</a>
+                <a class="item">Historia</a>
+                <a class="item">Contacto</a>
+                <div class="right menu">
+                    <div class="item">
+                        <div class="ui icon input">
+                            <input type="text" placeholder="Buscar...">
+                            <i class="search link icon"></i>
                         </div>
                     </div>
+                    <a class="item">
+                        <i class="shopping cart icon"></i>
+                        Carrito
+                    </a>
                 </div>
+            </nav>
+        </header>
+    </div>
+
+
+    <!-- Titulo -->
+    <header class="ui container">
+        <h1 class="ui huge header xbox-white-text">
+            <i class="game icon"></i>
+            Historia de Xbox
+        </h1>
+        <p> De la primera consola al ecosistema multiplataforma</p>
+    </header>
+
+    <!-- Origen XBOX -->
+    <section class="ui container">
+        <article class="ui raised segments xbox-card xbox-card">
+            <div class="ui inverted segment xbox-button">
+                <i class="xbox icon"></i>
+                1ª Generacion
             </div>
             
-            <!-- Card 2 -->
-            <div class="card">
-                <!-- Imagen -->
-                <div class="image">
-                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=300&h=200&fit=crop" alt="Xbox Controller">
-                </div>
-                <!-- Descripcion del producto -->
-                <div class="content">
-                    <a class="header">Control Inalámbrico Xbox</a>
-                    <div class="meta">
-                        <span class="date">Accesorio oficial</span>
-                    </div>
-                    <div class="description">
-                        Control inalámbrico con tecnología de impulsos y gatillos dinámicos para una experiencia inmersiva.
-                    </div>
-                </div>
-                <!-- Botones -->
-                <div class="extra content">
-                    <div class="ui two buttons">
-                        <!-- Boton con precio -->
-                        <div class="ui basic green button">$59.99</div>
-                        <!-- Boton para agregar al carrito -->
-                        <div class="ui basic black button">
-                            <i class="heart icon"></i>
-                            Agregar al carrito
-                        </div>
-                    </div>
-                </div>
+            <div class="ui inverted segment">
+                <i class="rocket icon icon-xbox"></i>
+                Origen y anuncio oficial
             </div>
-        </div>
-    </div>
+            <div class="ui inverted segment">
+                <i class="calendar alternate icon"></i>
+                <strong>2001:</strong> Lanzamiento de la Xbox original en Estados Unidos
+            </div>
+            <div class="ui inverted segment">
+                <i class="trophy icon"></i>
+                Título estrella: <strong>Halo: Combat Evolved</strong>
+            </div>
+        </article>
+
+    <!-- XBOX Live -->
+        <article class="ui raised segments xbox-card">
+            <div class="ui inverted segment">
+                <i class="rocket icon icon-xbox"></i>
+                Revolucion online
+            </div>
+            <div class="ui inverted segment">
+                <i class="calendar alternate icon"></i>
+                <strong>2002:</strong> Lanzamiento de XBOX Live
+            </div>
+            <div class="ui inverted segment">
+                <i class="lightbulb icon"></i>
+                Un servicio que permitio a los jugadores conectarse, competir y comunicarse por internet
+            </div>
+        </article>
+
+    <!-- XBOX 360 -->
+        <article class="ui raised segments xbox-card">
+            <div class="ui inverted segment xbox-button">
+                <i class="xbox icon"></i>
+                2ª Generacion
+            </div>
+            <div class="ui inverted segment">
+                <i class="rocket icon icon-xbox"></i>
+                Guerra por la septima generación
+            </div>
+            <div class="ui inverted segment">
+                <i class="calendar alternate icon"></i>
+                <strong>2005:</strong> Lanzamiento de la Xbox 360
+            </div>
+            <div class="ui inverted segment">
+                <i class="trophy icon"></i>
+                Título estrella: <strong>Gears of war</strong>
+            </div>
+        </article>
+
+
+    <!-- Kinect -->
+        <article class="ui raised segments xbox-card">
+            <div class="ui inverted segment">
+                <i class="rocket icon icon-xbox"></i>
+                Kinect - Control por movimiento
+            </div>
+            <div class="ui inverted segment">
+                <i class="calendar alternate icon"></i>
+                <strong>2007:</strong> Microsoft lanza Kinect
+            </div>
+            <div class="ui inverted segment">
+                <i class="lightbulb icon"></i>
+                <strong>Record Guinness:</strong> Dispositivo electronico de consumo que mas rapido se vendio en la historia
+            </div>
+        </article>
+
+    <!-- XBOX One -->
+        <article class="ui raised segments xbox-card">
+            <div class="ui inverted segment xbox-button">
+                <i class="xbox icon"></i>
+                3ª Generacion
+            </div>
+            <div class="ui inverted segment">
+                <i class="rocket icon icon-xbox"></i>
+                Presentacion de la XBOX One
+            </div>
+            <div class="ui inverted segment">
+                <i class="calendar alternate icon"></i>
+                <strong>2013:</strong> Lanzamiento de la Xbox One
+            </div>
+            <div class="ui inverted segment">
+                <i class="trophy icon"></i>
+                Título estrella: <strong>Halo: The Master Chief Collection</strong>
+            </div>
+        </article>
+
+
+    <!-- Game Pass -->
+        <article class="ui raised segments xbox-card">
+            <div class="ui inverted segment">
+                <i class="rocket icon icon-xbox"></i>
+                Game Pass
+            </div>
+            <div class="ui inverted segment">
+                <i class="calendar alternate icon"></i>
+                <strong>2017:</strong> Servicio de subscripcion Game Pass 
+            </div>
+            <div class="ui inverted segment">
+                <i class="lightbulb icon"></i>
+                Ofrecia un catalogo rotativo con cientos de juegos disponibles
+            </div>
+        </article>
+
+
+    <!-- XBOX Series X / S -->
+        <article class="ui raised segments xbox-card">
+            <div class="ui inverted segment xbox-button">
+                <i class="xbox icon"></i>
+                4ª Generacion
+            </div>
+            <div class="ui inverted segment">
+                <i class="rocket icon icon-xbox"></i>
+                XBOX Series X | S
+                </div>
+            <div class="ui inverted segment">
+                <i class="calendar alternate icon"></i>
+                <strong>2020:</strong> Lanzamiento de XBOX Series X (alta gama) y Series S (economica) 
+            </div>
+            <div class="ui inverted segment">
+                <i class="trophy icon"></i>
+                Título estrella: <strong>Starfield</strong>
+            </div>
+        </article>
+
+
+    <!-- Compras de Microsoft -->
+        <article class="ui raised segments xbox-card">
+            <div class="ui inverted segment">
+                <i class="rocket icon icon-xbox"></i>
+                Grandes adquisiciones
+            </div>
+            <div class="ui inverted segment">
+                <i class="calendar alternate icon"></i>
+                <strong>2021-2023:</strong> Adquisicion de ZeniMax/Bethesda y Activision Blizzard              
+            </div>
+            <div class="ui inverted segment">
+                <i class="lightbulb icon"></i>
+                Microsoft adquiere estudios importantes para fortalecer su catalogo exlusivo
+            </div>
+        </article>
+
+
+        <!-- XCloud -->
+        <article class="ui raised segments xbox-card">
+            <div class="ui inverted segment">
+                <i class="rocket icon icon-xbox"></i>
+                Enfoque Multiplataforma y Nube
+            </div>
+            <div class="ui inverted segment">
+                <i class="calendar alternate icon"></i>
+                <strong>2025:</strong> XBOX apuesta por xCloud (juego en la nube) y un ecosistema multiplataforma 
+            </div>
+            <div class="ui inverted segment">
+                <i class="lightbulb icon"></i>
+                Los usuarios pueden jugar en moviles, PC y otros dispositivos utilizando un modelo de negocio basado en suscripciones
+            </div>
+        </article>
+    </section>
 
 </body>
