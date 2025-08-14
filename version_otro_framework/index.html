@@ -4,26 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tributo a Xbox</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css"> <!-- carga los estilos de Semantic UI -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
   <div class="container">
+    <!-- ui: indica que se esta trabajando con Semantic UI, inverted: invierte los colores, menu: barra de menu -->
     <header class="ui inverted menu xbox-navbar">
-        <nav class="ui container">
+        <nav class="ui container"> <!-- **** container: hace que lo que este dentro del container no ocupe el 100%-->
             <h1 class="header item">
-                <i class="xbox icon"></i> TRIBUTO A XBOX
-            </h1 class="ui ">
+                <i class="xbox icon"></i> TRIBUTO A XBOX  <!-- **** icon: icono sacado de la base de Semantic UI-->
+            </h1 class="ui "> 
                 <div class="ui inverted menu">
-                    <a class="item" href="#">Inicio</a>
+                    <a class="item" href="#">Inicio</a> <!-- item: funciona como un item dentro del menu-->
                     <a class="item" href="#Productos">Productos</a>
                     <a class="item" href="#Novedades">Novedades</a>
                     <a class="item" href="historia.html">Historia</a>
                     <a class="item" href="#Contacto">Contacto</a>
                     <a class="item" href="#Mandos">Mandos</a>
                 </div>
-            <div class="right menu">
+            <div class="right menu"> <!-- right menu: lleva los elementos a la derecha -->
                 <div class="item">
                     <div class="ui icon input">
                         <input type="text" placeholder="Buscar...">
@@ -38,17 +39,17 @@
         </nav>
     </header>
 
-    <section class="ui fluid image">
+    <section class="ui fluid image"> <!-- fluid image: hace que la imagen ocupe todo el ancho disponible-->
       <img src="images/banner.jpg">
     </section>
 
-    <section class="ui inverted vertical center aligned segment xbox-banner">
+    <section class="ui inverted center aligned segment xbox-banner"> <!-- segment: crea un bloque con margen y fondo, blanco default-->
         <div class="ui text container">
             <h2 class="ui inverted header xbox-white-text">
                 <i class="xbox icon"></i> Bienvenido a la pagina tributo a XBOX
             </h2>
             <p>Aca podras ver, encontrar su historia, avances y algunos productos.</p>
-            <a class="ui huge green button xbox-button" href="prueba.html">
+            <a class="ui huge green button xbox-button" href="prueba.html"> <!--boton --> 
                 Explorar Historia <i class="right arrow icon"></i>
             </a>
         </div>
@@ -139,8 +140,8 @@
 
     <section id="Novedades" class="ui container">
         <h2 class="ui content xbox-green-text">Últimas Novedades</h2>
-        <div class="ui two stackable cards">
-            <article class="card xbox-card">
+        <div class="ui two stackable cards"> <!-- ui two satckeable cards: 2 cards -->
+            <article class="card xbox-card"> <!-- card: cada card-->
                 <figure class="image">
                     <i class="xbox icon"></i>
                 </figure>
@@ -165,7 +166,7 @@
     <section id="Contacto" class="ui container">
         <h2 class="ui content xbox-green-text">Momentos Icónicos</h2>
         <p> A continuacion momentos iconicos de la historia de XBOX </p>
-        <div class="ui three stackable cards">
+        <div class="ui three stackable cards"> <!-- 3 cards-->
             <article class="card xbox-card">
                 <figure class="image">
                     <i class="xbox icon"></i>
@@ -202,8 +203,8 @@
         <div class="ui inverted segment">
             <h2 class="ui header xbox-green-text">Mandos importantes de XBOX</h2>
             <p>A continuación algunos de los mandos más importantes de la compañía</p>
-            <div class="ui four column grid">
-                <div class="column center aligned green">
+            <div class="ui four column grid"> <!--grid: grillas para organizar las filas y columnas, four column: cada fila tendra 4 columnas--> 
+                <div class="column center aligned green"> <!-- column: columna dentro del grid, aligned center: centra el conenido-->
                     <p>XBOX ORIGINAL</p>
                 </div>
                 <div class="column center aligned xbox-button">
