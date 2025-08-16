@@ -4,25 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tributo a Xbox</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">  <!-- Iconos Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"> <!-- Iconos Bootstrap -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body class="bg-black text-white">
 
   <!-- Navbar -->
-<<<<<<< Updated upstream
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><!--Clase de bootstrap, responsive, bg-dark nav oscuro-->
     <div class="container"><!-- Contenedor para centrar el contenido -->
       <a class="navbar-brand" href="#"><!-- Logo o título de la página -->
         <i class="bi bi-xbox"></i> TRIBUTO A XBOX<!-- Icono de Xbox y título -->
-=======
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <i class="bi bi-xbox">TRIBUTO A XBOX</i> 
->>>>>>> Stashed changes
+
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
         <span class="navbar-toggler-icon"></span>
@@ -30,10 +24,10 @@
       <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav me-auto">
           <li class="nav-item"><a class="nav-link text-white" href="#">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">Productos</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">Novedades</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">Historia</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#Productos">Productos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#Novedades">Novedades</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="historia.html">Historia</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#Contacto">Contacto</a></li>
         </ul>
         <form class="d-flex me-3">
           <input class="form-control me-2 bg-dark text-white border-success" type="search" placeholder="Buscar...">
@@ -58,14 +52,14 @@
         <i class="bi bi-xbox"></i> Bienvenido a la página tributo a XBOX
       </h2>
       <p>Aquí podrás ver su historia, avances y algunos productos.</p>
-      <a class="btn btn-lg xbox-button" href="prueba.html">
+      <a class="btn btn-lg xbox-button" href="historia.html">
         Explorar Historia <i class="bi bi-arrow-right"></i>
       </a>
     </div>
   </section>
 
   <!-- Productos Destacados -->
-  <section class="container my-5">
+  <section id="Productos" class="container my-5">
     <div class="text-center mb-4">
       <h2 class="xbox-green-text"><i class="bi bi-xbox"></i> Productos Destacados</h2>
       <p class="xbox-white-text">Los favoritos de nuestros clientes</p>
@@ -105,7 +99,7 @@
   </section>
 
   <!-- Novedades -->
-  <section class="container my-5">
+  <section id="Novedades" class="container my-5">
     <h2 class="xbox-green-text">Últimas Novedades</h2>
     <div class="row g-4">
       <div class="col-md-6">
@@ -159,8 +153,55 @@
     </div>
   </section>
 
+  <section id="Mandos" class="container my-5">
+    <div class="bg-dark text-white p-4 rounded">
+        <h2 class="xbox-green-text">Mandos importantes de XBOX</h2>
+        <p>A continuación algunos de los mandos más importantes de la compañía</p>
+
+        <!-- Grid de 4 columnas -->
+        <div class="row text-center mb-4">
+            <div class="col-6 col-md-3 text-white xbox-button">
+                <p>XBOX ORIGINAL</p>
+            </div>
+            <div class="col-6 col-md-3 text-white bg-success">
+                <p>XBOX 360</p>
+            </div>
+            <div class="col-6 col-md-3 text-white xbox-button">
+                <p>XBOX ONE</p>
+            </div>
+            <div class="col-6 col-md-3 text-white bg-success">
+                <p>XBOX SERIES</p>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-6 col-md-3 mb-3">
+                <div class="bg-dark p-2">
+                    <img src="images/original.jpg" class="img-fluid rounded" alt="XBOX ORIGINAL">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+                <div class="bg-dark p-2">
+                    <img src="images/360.jpg" class="img-fluid rounded" alt="XBOX 360">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+                <div class="bg-dark p-2">
+                    <img src="images/ONE.jpg" class="img-fluid rounded" alt="XBOX ONE">
+                </div>
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+                <div class="bg-dark p-2">
+                    <img src="images/SERIES.jpg" class="img-fluid rounded" alt="XBOX SERIES">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
   <!-- Contacto -->
-  <section class="xbox-contact py-4">
+  <section id ="Contacto" class="xbox-contact py-4">
     <div class="container">
       <h2 class="xbox-green-text">Páginas oficiales de XBOX</h2>
       <ul class="list-unstyled">
@@ -172,7 +213,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="xbox-footer text-white py-4">
+  <footer class="xbox-footer bg-dark text-white py-4">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -182,8 +223,8 @@
         <div class="col-md-3">
           <h4>Redes</h4>
           <ul class="list-unstyled">
-            <li><a href="https://instagram.com/tributoxbox" target="_blank" class="text-white">Instagram</a></li>
-            <li><a href="https://twitter.com/tributoxbox" target="_blank" class="text-white">Twitter</a></li>
+            <li><a href="https://instagram.com/xbox" target="_blank" class="text-white">Instagram</a></li>
+            <li><a href="https://twitter.com/xbox" target="_blank" class="text-white">Twitter</a></li>
             <li><a href="mailto:contacto@tributoxbox.com" class="text-white">Email</a></li>
           </ul>
         </div>
