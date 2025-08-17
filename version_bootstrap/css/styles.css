@@ -14,9 +14,9 @@
 /* styles.css */
 body {
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  background-color: var(--color-bg-black);
-  color: var(--color-text-white);
-  font-size: 13px
+  /*background-color: var(--color-bg-black);
+  color: var(--color-text-white);*/
+  font-size: 14px
 }
 
 /* Tarjetas personalizadas */
